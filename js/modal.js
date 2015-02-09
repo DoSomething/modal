@@ -230,7 +230,8 @@ define(function(require) {
   window.DS.Modal = {
     isOpen: isOpen,
     open: open,
-    close: close
+    close: close,
+    Events: Events
   };
 
   return window.DS.Modal;
