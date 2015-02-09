@@ -1,4 +1,4 @@
-# DoSomething.org Modals [![Build Status](https://img.shields.io/wercker/ci/54d51cd600a893ca550003f2)](https://app.wercker.com/#applications/54d51cd600a893ca550003f2) 
+# DoSomething.org Modals [![Build Status](https://img.shields.io/wercker/ci/54d51cd600a893ca550003f2.svg)](https://app.wercker.com/#applications/54d51cd600a893ca550003f2) 
 This is the code that powers the modals on DoSomething.org.
 
 Better documentation coming soon!
