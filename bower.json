@@ -6,12 +6,12 @@
     "dist/modal.js"
   ],
   "dependencies": {
-    "jquery": "^1.7",
-    "neue": "DoSomething/neue#^6.0.0"
+    "jquery": "^1.7"
   },
   "devDependencies": {
     "jquery": "1.8.3",
-    "almond": "~0.2.9"
+    "almond": "~0.2.9",
+    "neue": "DoSomething/neue#^6.0.0"
   },
   "resolutions": {
     "jquery": "1.8.3"
