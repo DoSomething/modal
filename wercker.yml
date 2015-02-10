@@ -11,6 +11,10 @@ build:
           ./node_modules/bower/bin/bower install
     - npm-install
     - npm-test
+  after_steps:
+    - hipchat-notify:
+        token: $HIPCHAT_TOKEN
+        room-id: 255200
 
 deploy:
   steps:
@@ -26,3 +30,7 @@ deploy:
         name: Use distribution ignore file
         code: rm .gitignore && mv .distignore .gitignore
     - dfurnes/git-tag-version
+  after_steps:
+    - hipchat-notify:
+        token: $HIPCHAT_TOKEN
+        room-id: 255200
