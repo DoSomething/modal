@@ -152,6 +152,11 @@ define(function(require) {
 
     var scrollOffset = parseInt($chrome.css("top")) * -1;
 
+    // Remove URL hash for modal from browser
+    if(window.location.hash === "#" + $modal.attr("id")) {
+      window.location.hash = "/";
+    }
+
     if(options.animated && Modernizr.cssanimations) {
       $chrome.addClass("animated-close");
       $modalContainer.addClass("animated-close");
@@ -160,11 +165,6 @@ define(function(require) {
       });
     } else {
       _cleanup(scrollOffset);
-    }
-
-    // Remove URL hash for modal from browser
-    if(window.location.hash === "#" + $modal.attr("id")) {
-      window.location.hash = "/";
     }
 
     // We provide an event that other modules can hook into to perform custom functionality when
