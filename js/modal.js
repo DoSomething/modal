@@ -59,6 +59,12 @@ define(function(require) {
         closeable = false;
         break;
 
+      // Add option to only allow the close button to close the modal.
+      case "closeButtonOnly":
+        $el.prepend($closeLink);
+        closeable = false;
+        break;
+
       default:
         $el.prepend($closeLink);
         closeable = true;
