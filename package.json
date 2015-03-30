@@ -10,7 +10,6 @@
     "url": "https://github.com/DoSomething/neue.git"
   },
   "scripts": {
-    "postinstall": "grunt build",
     "test": "grunt test"
   },
   "devDependencies": {
