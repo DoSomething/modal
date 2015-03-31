@@ -1,4 +1,4 @@
-// Show supplementary information to a user without leaving the page. Fills
+// Modals show supplementary information to a user without leaving the page. Fills
 // screen on mobile, centered with overlay on tablet/desktop. Use `.modal__block`
 // element to add padding inside the modal. (This allows "full-width" modal content
 // to work without a negative margin.)
@@ -7,7 +7,11 @@
 // - `[data-modal-close]`: set to "true" to include a close button on the modal, or "skip" to delegate a skip form action
 // - `[data-modal-skip-form]`: selector for a skip `form` element to submit upon clicking the "skip" link
 //
-// Styleguide Modal (Popup)
+
+// Set default values for variables
+$tablet: "(min-width: 760px)" !default;
+$base-spacing: 24px !default;
+$light-gray: #ddd !default;
 
 .modal-container {
   display: none;
@@ -85,7 +89,7 @@
   display: none;
 }
 
-// See also: _chrome.scss
+// See also: @neue/_chrome.scss
 .chrome.has-modal {
   position: fixed;
 
