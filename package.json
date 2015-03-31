@@ -19,6 +19,7 @@
     "autoprefixer-core": "^4.0.2",
     "babel-core": "^4.7.0",
     "babel-loader": "^4.2.0",
+    "bower": "^1.4.0",
     "css-mqpacker": "^2.0.0",
     "grunt": "^0.4.0",
     "grunt-bump": "^0.0.14",
