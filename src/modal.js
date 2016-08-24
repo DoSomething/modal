@@ -131,10 +131,12 @@ var open = function($el, options) {
 var _cleanup = function(scrollOffset) {
   $modalContainer.css("display", "none");
   $modalContainer.removeClass("animated-close");
-  $modal.css("display", "none");
 
-  // Remove any generated content
-  $modal.find(".js-modal-generated").remove();
+  // Hide the modal and remove any generated content.
+  if ($modal) {
+    $modal.css("display", "none");
+    $modal.find(".js-modal-generated").remove();
+  }
 
   // Remove overlay and reset scroll position
   $chrome.removeClass("has-modal");
@@ -229,6 +231,6 @@ $document.ready(function() {
   $body.on("click", ".js-close-modal", _closeHandler);
 });
 
-// Export public API:
-export default { isOpen, open, close, Events };
+// Export public CommonJS API:
+module.exports = { isOpen, open, close, Events };
 
